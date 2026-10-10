@@ -1,67 +1,168 @@
-    # Inventory Management System
+# 📦 Inventory Management System
 
-    A menu-driven Python console program for managing product and stock records.
+**A Python-based inventory application for managing products, tracking stock quantities, and identifying low-stock items.**
 
-    ## Features
+A menu-driven console project demonstrating how Python can be used to organize product records and perform everyday inventory operations.
 
-    - Add products and detect duplicate product IDs
-- View product records sorted by supported fields
-- Search products by ID
-- Update product details
-- Increase or decrease stock quantity
-- Delete products with confirmation details
-- Check for low-stock items
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/Dependencies-None-2ea44f?style=for-the-badge" alt="No third-party dependencies">
+  <img src="https://img.shields.io/badge/Interface-CLI-555555?style=for-the-badge" alt="Command-line interface">
+  <img src="https://img.shields.io/badge/Project-Learning%20Project-orange?style=for-the-badge" alt="Learning project">
+</p>
 
-    ## Requirements
+---
 
-    Uses only the Python standard library; no third-party packages are required.
+## 📌 Overview
 
-    - Recommended Python version: Python 3.10 or newer.
-    - See [`requirements.txt`](requirements.txt).
+The **Inventory Management System** provides a simple way to manage product information through an interactive terminal menu.
 
-    ## Run locally
+Users can add products, browse and search records, update product details, adjust stock quantities, and identify items that may need replenishment.
 
-    1. Install Python 3.
-    2. Clone this repository or download it as a ZIP.
-    3. Open a terminal in the repository root.
-    4. Run:
+The project focuses on practical Python programming, data structures, record management, and basic inventory tracking.
 
-       ```bash
-       python3 src/inventory.py
-       ```
+## ✨ Features
 
-    ## Sample usage
+| Feature | Description |
+|---|---|
+| ➕ Product Registration | Add products and detect duplicate product IDs |
+| 📋 Product Listing | View product records and sort them by supported fields |
+| 🔎 Product Search | Find products using their IDs |
+| ✏️ Record Updates | Modify existing product details |
+| 📈 Stock Adjustment | Increase or decrease product quantities |
+| 🗑️ Product Deletion | Remove products with confirmation details |
+| ⚠️ Low-Stock Detection | Identify products that fall below the configured stock threshold |
 
-    Run the script and use the numbered menu to add, view, search, update, adjust quantity, delete products, or check stock. Sample products are included.
+## 🛠️ Built With
 
-    ## Project structure
+- **Language:** Python
+- **Interface:** Interactive command-line menu
+- **Data management:** In-memory product records
+- **Dependencies:** Python standard library only
 
-    ```text
-    Inventory-Management-System/
-    ├── src/
-    │   └── inventory.py
-    ├── docs/
-    │   └── screenshots/
-    ├── README.md
-    ├── requirements.txt
-    └── LICENSE
-    ```
+No third-party packages or database installation are required.
 
-    ## Screenshots
+## 🚀 Getting Started
 
-    Add terminal screenshots here after running the program. Suggested screenshots: product list, stock adjustment, and low-stock check. No screenshots are included because none were provided.
+### Prerequisites
 
-    ## Data and persistence
+- Python 3.10 or newer recommended
+- A terminal or command prompt
+- Git, if you want to clone the repository
 
-    The program starts with sample records defined in the source code. Records are maintained in memory during the current run; they are not saved to a database or file.
+### 1. Clone the repository
 
-    ## Limitations
+```bash
+git clone https://github.com/sudevnprabhu-SNP/Inventory-Management-System.git
+```
 
-    - Product records are stored in memory and are lost when the program exits.
-- Input validation and stock rules are simplified and may need additional edge-case handling.
-- There is no database, file-based persistence, GUI, or barcode integration.
-- This is a learning project, not a production inventory or accounting system.
+### 2. Navigate to the project folder
 
-    ## License
+```bash
+cd Inventory-Management-System
+```
 
-    This project is distributed under the MIT License. See [`LICENSE`](LICENSE). The license applies to the original project code and documentation authored for this repository; any third-party materials retain their own terms.
+### 3. Start the application
+
+```bash
+python3 src/inventory.py
+```
+
+If `python3` is not recognized on Windows, try:
+
+```bash
+python src/inventory.py
+```
+
+Use the numbered menu and follow the prompts to perform inventory operations.
+
+## 🧪 Example Workflow
+
+A typical session could include:
+
+1. Viewing the available products.
+2. Searching for a product by its ID.
+3. Updating product information.
+4. Increasing or decreasing stock quantities.
+5. Checking for low-stock items.
+6. Deleting a product when it is no longer required.
+
+Sample products are included to help users explore the application.
+
+## 📁 Project Structure
+
+```text
+Inventory-Management-System/
+├── src/
+│   └── inventory.py
+├── docs/
+│   └── screenshots/
+├── README.md
+├── requirements.txt
+└── LICENSE
+```
+
+## 🖥️ Screenshots
+
+Application screenshots can be added here to demonstrate the program in action.
+
+Suggested screenshots:
+
+- Main menu
+- Product listing
+- Product search or update
+- Stock quantity adjustment
+- Low-stock report
+
+*Screenshots are not included yet. Add genuine terminal captures after running the application.*
+
+## 💾 Data and Persistence
+
+The application starts with sample product records defined in the source code. Product information and changes are stored in memory while the program is running.
+
+**Important:** Changes are not saved after the application exits.
+
+## ⚠️ Limitations
+
+- **Temporary storage:** Product records are not persisted to a file or database.
+- **Basic validation:** Input and stock validation are simplified and may require additional edge-case handling.
+- **Console-based interface:** No graphical user interface is currently provided.
+- **No external integrations:** Barcode scanners, suppliers, and external inventory services are not connected.
+
+This project is intended for learning and demonstration, not for production inventory, billing, or accounting operations.
+
+## 🎯 Learning Objectives
+
+This project demonstrates practical use of:
+
+- Python dictionaries and data structures
+- Functions, loops, and conditional statements
+- Creating, reading, updating, and deleting records
+- Searching and sorting data
+- Input validation and quantity checks
+- Basic stock monitoring and threshold-based warnings
+- Organizing a Python project for GitHub
+
+## 🔮 Future Improvements
+
+Possible extensions include:
+
+- Saving product records using SQLite
+- Adding a graphical interface or web dashboard
+- Generating inventory reports
+- Supporting product categories and stock movement history
+- Adding automated tests and stronger input validation
+
+These are potential future enhancements, not existing features.
+
+## 📄 License
+
+Distributed under the MIT License. See [`LICENSE`](LICENSE) for details.
+
+Publish this license only if you have the rights to license the code and documentation in the repository. Any third-party materials remain subject to their own terms.
+
+---
+
+<p align="center">
+  <i>Built with Python • Focused on Inventory Management • Created as a Learning Project</i>
+</p>
